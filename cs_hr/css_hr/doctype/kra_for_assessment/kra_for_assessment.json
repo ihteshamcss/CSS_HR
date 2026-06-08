@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-19 12:34:29.633710",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "key_result_area",
+  "weightage"
+ ],
+ "fields": [
+  {
+   "fieldname": "key_result_area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Key Result Area"
+  },
+  {
+   "fieldname": "weightage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Weightage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-19 12:34:29.633710",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "KRA For Assessment",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

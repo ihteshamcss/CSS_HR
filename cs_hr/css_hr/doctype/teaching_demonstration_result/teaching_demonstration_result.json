@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-20 09:23:57.867482",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_opening",
+  "total_marks",
+  "column_break_4eqyq",
+  "job_advertisement",
+  "designation",
+  "section_break_shhwt",
+  "demo_result_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening"
+  },
+  {
+   "fieldname": "column_break_4eqyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_opening.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "section_break_shhwt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "job_advertisement",
+   "fieldtype": "Link",
+   "label": "Job Advertisement",
+   "options": "Job Ad"
+  },
+  {
+   "fieldname": "demo_result_table",
+   "fieldtype": "Table",
+   "label": "Demo Result Table",
+   "options": "Demo Result Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Teaching Demonstration Result",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-20 09:37:52.926028",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Teaching Demonstration Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

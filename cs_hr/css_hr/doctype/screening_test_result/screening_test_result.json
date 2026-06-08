@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-19 10:27:11.119355",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_advertisement",
+  "job_opening",
+  "column_break_ngier",
+  "designation",
+  "screening_test",
+  "total_marks",
+  "test_date",
+  "applicants_marks_details_section",
+  "applicants_marks"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_advertisement",
+   "fieldtype": "Link",
+   "label": "Job Advertisement",
+   "options": "Job Ad"
+  },
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening"
+  },
+  {
+   "fetch_from": "screening_test.total_marks",
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "label": "Total Marks"
+  },
+  {
+   "fetch_from": "job_opening.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "screening_test.test_date",
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "applicants_marks_details_section",
+   "fieldtype": "Section Break",
+   "label": "Applicants Marks Details"
+  },
+  {
+   "fieldname": "applicants_marks",
+   "fieldtype": "Table",
+   "label": "Applicants Marks",
+   "options": "Applicants Marks Details Screening test"
+  },
+  {
+   "fieldname": "column_break_ngier",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "screening_test",
+   "fieldtype": "Link",
+   "label": "Screening Test",
+   "options": "Screening Test"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-20 11:08:16.122968",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Screening Test Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

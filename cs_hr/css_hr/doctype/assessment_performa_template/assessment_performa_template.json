@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:APT-{####}",
+ "creation": "2026-05-19 12:28:12.882519",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_template_title",
+  "column_break_5ba23",
+  "grade",
+  "kra_section",
+  "kra"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessment_template_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Template Title"
+  },
+  {
+   "fieldname": "column_break_5ba23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "kra_section",
+   "fieldtype": "Section Break",
+   "label": "KRA"
+  },
+  {
+   "fieldname": "kra",
+   "fieldtype": "Table",
+   "label": "KRA",
+   "options": "KRA For Assessment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-19 16:20:01.409714",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Assessment Performa Template",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "assessment_template_title"
+}

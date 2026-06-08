@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SYN-{YY}-{###}",
+ "creation": "2026-04-15 11:21:23.066831",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "column_break_kncpt",
+  "year",
+  "enable",
+  "section_break_jmtw4",
+  "syndicate_members"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "enable"
+  },
+  {
+   "fieldname": "column_break_kncpt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jmtw4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "syndicate_members",
+   "fieldtype": "Table",
+   "label": "Syndicate Members",
+   "options": "Syndicate Members"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-15 12:36:28.714625",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Syndicate",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

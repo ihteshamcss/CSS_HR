@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-20 09:47:53.076827",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_advertisement",
+  "job_opening",
+  "date",
+  "column_break_rombh",
+  "designation",
+  "total_marks",
+  "section_break_uiho5",
+  "job_applicant_interview_result_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening"
+  },
+  {
+   "fieldname": "column_break_rombh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_opening.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "section_break_uiho5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_applicant_interview_result_table",
+   "fieldtype": "Table",
+   "label": "Job Applicant Interview Result Table",
+   "options": "Job Applicant Interview Result Table"
+  },
+  {
+   "fieldname": "job_advertisement",
+   "fieldtype": "Link",
+   "label": "Job Advertisement",
+   "options": "Job Ad"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-20 09:59:26.068331",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Job Applicant Interview Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

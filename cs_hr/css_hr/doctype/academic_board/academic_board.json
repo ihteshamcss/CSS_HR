@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:AB-{YY}-{##}",
+ "creation": "2026-04-15 11:26:51.209228",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "column_break_jds7w",
+  "year",
+  "enable",
+  "section_break_6t8nz",
+  "academic_board_members"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "column_break_jds7w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6t8nz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "academic_board_members",
+   "fieldtype": "Table",
+   "label": "Academic Board Members",
+   "options": "Academic Board Members"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-15 11:38:28.102048",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Academic Board",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

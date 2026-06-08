@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-15 11:24:58.423283",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "senate_name",
+  "column_break_kvlwj",
+  "year",
+  "enable",
+  "section_break_iexr9",
+  "senate_members"
+ ],
+ "fields": [
+  {
+   "fieldname": "senate_name",
+   "fieldtype": "Data",
+   "label": "Senate Name"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "column_break_kvlwj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iexr9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "senate_members",
+   "fieldtype": "Table",
+   "label": "Senate Members",
+   "options": "Senate Members"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-15 11:42:36.876423",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Senate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

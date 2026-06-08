@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-19 12:59:47.744810",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_opening",
+  "job_applicant",
+  "applicant_name",
+  "assessment_performa_template",
+  "column_break_wchty",
+  "department",
+  "designation",
+  "grade",
+  "amended_from",
+  "section_break_uhgwd",
+  "kra_result",
+  "section_break_sbrwi",
+  "grand_total",
+  "column_break_7oo8f",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fetch_from": "job_applicant.applicant_name",
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "column_break_wchty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_opening.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "job_opening.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "job_applicant.job_title",
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Assessment Performa",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "assessment_performa_template",
+   "fieldtype": "Link",
+   "label": "Assessment Performa Template",
+   "options": "Assessment Performa Template"
+  },
+  {
+   "fieldname": "section_break_uhgwd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kra_result",
+   "fieldtype": "Table",
+   "label": "KRA Result",
+   "options": "KRA Result for Assessment"
+  },
+  {
+   "fetch_from": "job_opening.custom_bps",
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "section_break_sbrwi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Int",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_7oo8f",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-20 13:05:33.099571",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Assessment Performa",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

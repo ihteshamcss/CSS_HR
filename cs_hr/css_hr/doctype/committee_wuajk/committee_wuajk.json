@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:committee_name",
+ "creation": "2024-04-02 12:32:15.979597",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "committee_name",
+  "column_break_zhy23",
+  "committee_against_job_opening",
+  "section_break_7tf1i",
+  "committee_members",
+  "section_break_icu3q",
+  "external_committee_members",
+  "section_break_pcxst",
+  "combined_committee_members",
+  "html_table",
+  "committee_purpose",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "committee_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Committee Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_zhy23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "committee_against_job_opening",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Committee Against Job Opening",
+   "options": "Job Opening"
+  },
+  {
+   "fieldname": "section_break_7tf1i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "committee_members",
+   "fieldtype": "Table",
+   "label": "Committee Members",
+   "options": "Scrutiny Committee Members"
+  },
+  {
+   "fieldname": "section_break_icu3q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "external_committee_members",
+   "fieldtype": "Table",
+   "label": "External Committee Members",
+   "options": "External Committee Members Tab"
+  },
+  {
+   "fieldname": "section_break_pcxst",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "combined_committee_members",
+   "fieldtype": "Table",
+   "label": "Committee Members",
+   "options": "Committee Members"
+  },
+  {
+   "fieldname": "html_table",
+   "fieldtype": "HTML",
+   "label": "HTML Table",
+   "options": "<h5 id=\"titlePara\">Committee Members</h5>\n<table id=\"myTable\">\n</table>"
+  },
+  {
+   "fieldname": "committee_purpose",
+   "fieldtype": "Text Editor",
+   "label": "Committee Purpose"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Committee WUAJK",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-16 10:44:40.888127",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Committee WUAJK",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

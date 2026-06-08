@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-15 10:07:55.077255",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "time",
+  "column_break_txtez",
+  "year",
+  "meeting_type",
+  "committee",
+  "section_break_7evjm",
+  "agenda",
+  "section_break_nezpz",
+  "moms"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Select",
+   "label": "Meeting Type",
+   "options": "\nSyndicate\nAcademic\nSenate\nCommittee"
+  },
+  {
+   "fieldname": "column_break_txtez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7evjm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Table",
+   "label": "Agenda",
+   "options": "Meeting Agenda"
+  },
+  {
+   "fieldname": "section_break_nezpz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "moms",
+   "fieldtype": "Table",
+   "label": "MOM's",
+   "options": "MOM"
+  },
+  {
+   "depends_on": "eval:doc.meeting_type == \"Committee\"",
+   "fieldname": "committee",
+   "fieldtype": "Link",
+   "label": "Committee",
+   "options": "Committee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-15 10:49:58.117090",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "Meetings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

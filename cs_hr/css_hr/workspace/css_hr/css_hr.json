@@ -1,0 +1,151 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"unN3rm0S9Y\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">CSS HR</span>\",\"col\":12}},{\"id\":\"TtS2nqSUFI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Meetings WUAJK</b></span>\",\"col\":12}},{\"id\":\"dN6VgqcYn1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Committees\",\"col\":3}},{\"id\":\"dbUAEUU_-w\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Meetings\",\"col\":3}},{\"id\":\"8u4GdejXZi\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hyQP2tRwfq\",\"type\":\"card\",\"data\":{\"card_name\":\"Committee\",\"col\":4}},{\"id\":\"2RUczJ9iO2\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}}]",
+ "creation": "2026-04-14 16:10:17.427265",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "header",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "CSS HR",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee",
+   "link_count": 0,
+   "link_to": "Committee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Syndicate",
+   "link_count": 0,
+   "link_to": "Syndicate",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Senate",
+   "link_count": 0,
+   "link_to": "Senate",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Academic Board",
+   "link_count": 0,
+   "link_to": "Academic Board",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committees WUAJK",
+   "link_count": 0,
+   "link_to": "Committee WUAJK",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee Designations",
+   "link_count": 0,
+   "link_to": "Committee Designation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Committee Members Types",
+   "link_count": 0,
+   "link_to": "Committee Members Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "External Committee Members",
+   "link_count": 0,
+   "link_to": "External Committee Members",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-04-16 16:15:13.791289",
+ "modified_by": "Administrator",
+ "module": "CSS HR",
+ "name": "CSS HR",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 17.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Committees",
+   "link_to": "Committee",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Meetings",
+   "link_to": "Meetings",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "CSS HR"
+}
