@@ -27,7 +27,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = { "Leave Application": "public/js/leave_application.js" }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -108,21 +108,33 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Leave Application":
+        "cs_hr.overrides.leave_application.CustomLeaveApplication",
+
+    "Leave Allocation":
+        "cs_hr.overrides.leave_allocation.CustomLeaveAllocation",
+
+    "Leave Policy Assignment":
+        "cs_hr.overrides.leave_policy_assignment.CustomLeavePolicyAssignment",
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Job Applicant": {
+        "validate": "cs_hr.css_hr.api.job_applicant.validate_job_application"
+    },
+    "Job Ad": {
+        "before_submit": "cs_hr.css_hr.job_ad.job_ad.before_submit",
+        "on_submit": "cs_hr.css_hr.job_ad.job_ad.on_submit",
+        "before_cancel": "cs_hr.css_hr.job_ad.job_ad.before_cancel",
+        "on_trash": "cs_hr.css_hr.job_ad.job_ad.on_trash"
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------
