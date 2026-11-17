@@ -230,15 +230,6 @@ class CustomLeaveApplication(LeaveApplication):
             submit=submit
         )
 
-        # ---------------------------------------------------------
-        # SECOND LEDGER
-        #
-        # Temporarily use the parent Leave Type so that HRMS's
-        # own ledger/allocation logic creates:
-        #
-        # LFP Faculty = -5
-        # ---------------------------------------------------------
-
         original_leave_type = self.leave_type
 
         try:
